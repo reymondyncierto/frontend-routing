@@ -89,8 +89,14 @@ export const ReactRouter = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/yser" element={<YserList />} />
-        <Route path="/yser/:id" element={<Yser />} /> {/* :id is a parameter, dynamic routing */}
+        {/* <Route path="/yser" element={<YserList />} />
+        <Route path="/yser/:id" element={<Yser />} /> :id is a parameter, dynamic routing */}
+        {/* another way of having above's code using nested routes */}
+        <Route path="/yser">
+          <Route index element={<YserList />} />
+          <Route path=":id" element={<Yser />} />
+        </Route>
+        <Route path="*" element={<h1>Not Found</h1>} /> {/* this is a catch all route */}
       </Routes>
     </>
   )  
