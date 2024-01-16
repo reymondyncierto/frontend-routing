@@ -3,13 +3,15 @@ import ReactDOM from 'react-dom/client';
 import { ReactRouter } from './reactRouter';
 import { BrowserRouter } from 'react-router-dom';
 import { UseRoutes } from './useRoutes';
+import { Hooks } from './Hooks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       {/* <ReactRouter /> */}
-      <UseRoutes />
+      {/* <UseRoutes /> */}
+      <Hooks />
     </BrowserRouter>
   </React.StrictMode>
 );
