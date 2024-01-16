@@ -10,10 +10,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* <ReactRouter /> */}
+      <ReactRouter />
       {/* <UseRoutes /> */}
       {/* <Hooks /> */}
-      <UseContext />
+      {/* <UseContext /> */}
     </BrowserRouter>
   </React.StrictMode>
 );
